@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   let title = 'Next.js pddage'
-  let message = 'React Next.js sample page3.'
+  let message = 'React Next.js 動くぞ'
 
   return (
     <div>
