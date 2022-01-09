@@ -1,0 +1,18 @@
+    .h1 {
+        text-align:center;
+    }
+  
+    .h2 {
+        text-align:center;
+        margin: 0px 5px;
+        color: rgb(252, 0, 0);
+        font-size:36px;
+        font-weight:bold;
+    }
+  
+    .p {
+        text-align:'left';
+        margin:'0px 5px';
+        color:'#669';
+        font-size:'18pt';
+    }

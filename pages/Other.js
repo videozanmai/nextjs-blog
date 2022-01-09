@@ -1,8 +1,8 @@
 import Header from "./header"
 import Link from "next/link"
 
-export default function Home() {
-  let title = 'Index'
+export default function Other() {
+  let title = 'Other'
 
   return (
     <div>
@@ -15,10 +15,10 @@ export default function Home() {
         </h3>
         <div className="card p-3">
           <p>
-            これは、ページ移動のサンプルです。
+            これは、もう一つのページです。
           </p>
-          <Link href="/Other">
-            <a>Go to Other page</a>
+          <Link href="/">
+            <a>Back to Index page #gt:$gt;</a>
           </Link>
         </div>
       </div>
