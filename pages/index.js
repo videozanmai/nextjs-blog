@@ -1,27 +1,19 @@
-import Header from "./header"
+import Layout from "../components/layout"
 import Link from "next/link"
+import MyImage from "../components/image"
 
 export default function Home() {
-  let title = 'Index'
-
   return (
     <div>
-      <Header title={title}/>
-      <h1 className='bg-primary text-white display-4 text-right'>React</h1>
-      <div className='container'>
-        <h2 className='my-3 text-center'>{title}</h2>
-        <h3 className="my-3 text-primary text-center">
-          {title}
-        </h3>
-        <div className="card p-3">
-          <p>
-            これは、ページ移動のサンプルです。
-          </p>
-          <Link href="/Other">
-            <a>Go to Other page</a>
+      <Layout header="ヘッダーに表示する文字" title="Top page.">
+        <div className="alert alert-primary">
+          <h5 className="mb-4">Welcome to next.js!</h5>
+          <Link href="./Other">
+            <button className="btn btn-primary">go to Other</button>
           </Link>
+          <MyImage fname="test.png" size="300"/>
         </div>
-      </div>
+      </Layout>
     </div>
   )
 }

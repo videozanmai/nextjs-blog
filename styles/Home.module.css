@@ -115,11 +115,11 @@
   }
 }
 
-.h1 {
+#h1 {
   text-align:center;
 }
 
-.h2 {
+#h2 {
   text-align:center;
   margin: 0px 5px;
   color: rgb(252, 0, 0);
@@ -127,7 +127,7 @@
   font-weight:bold;
 }
 
-.p {
+#p {
   text-align:'left';
   margin:'0px 5px';
   color:'#669';

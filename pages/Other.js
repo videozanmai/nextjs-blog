@@ -1,27 +1,19 @@
-import Header from "./header"
+import Layout from "../components/layout"
 import Link from "next/link"
 
 export default function Other() {
-  let title = 'Other'
-
   return (
     <div>
-      <Header title={title}/>
-      <h1 className='bg-primary text-white display-4 text-right'>React</h1>
-      <div className='container'>
-        <h2 className='my-3 text-center'>{title}</h2>
-        <h3 className="my-3 text-primary text-center">
-          {title}
-        </h3>
-        <div className="card p-3">
-          <p>
-            これは、もう一つのページです。
-          </p>
-          <Link href="/">
-            <a>Back to Index page #gt:$gt;</a>
-          </Link>
-        </div>
-      </div>
+        <Layout header="Next" title="Other page.">
+            <div className="card p-4 text-center">
+                <h5 className="mb-4">this is other page...</h5>
+                <Link href=".">
+                    <button className="btn btn-primary">
+                        Back to Top
+                    </button>
+                </Link>
+            </div>
+        </Layout>
     </div>
   )
 }
